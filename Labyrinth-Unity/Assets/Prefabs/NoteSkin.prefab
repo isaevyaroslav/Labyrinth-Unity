@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 5639288886366125784}
   - component: {fileID: 5639288886366125785}
   - component: {fileID: 5639288886366125790}
-  - component: {fileID: 5639288886366125791}
+  - component: {fileID: 1368341813702282342}
   m_Layer: 0
-  m_Name: Note_1
+  m_Name: NoteSkin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92,7 +92,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5639288886366125791
+--- !u!114 &1368341813702282342
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -101,10 +101,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5639288886366125788}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba2d5a496c2047340a8b59a040a2cc79, type: 3}
+  m_Script: {fileID: 11500000, guid: 40d66d77bd86ccc45ad7f3f2fd0c29cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Note: {fileID: 5639288886366125788}
-  Message: "\u041F\u0435\u0440\u0432\u0430\u044F \u0437\u0430\u043F\u0438\u0441\u043A\u0430
-    \u0441 \u0442\u0435\u043A\u0441\u0442\u043E\u043C"
-  Id: 1
+  _playerNotes: {fileID: 11400000, guid: 4753f738be9fbe047adc1a1476f83a48, type: 2}
+  _notesList: {fileID: 11400000, guid: 862555cc977d8ca48984ad3668486804, type: 2}
+  _noteNumber: 0
