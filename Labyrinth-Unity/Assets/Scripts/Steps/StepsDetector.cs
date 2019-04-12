@@ -8,10 +8,10 @@ namespace LabyrinthUnity.StepsNS
         private float _stepLength;
         private float _currentStepLength;
 
-        public StepsDetector(Transform playerPosition, Steps steps)
+        public StepsDetector(Transform playerPosition, float stepLength)
         {
             _playerPosition = playerPosition;
-            _stepLength = steps.StepLength;
+            _stepLength = stepLength;
         }
 
         public bool IsStepMade()

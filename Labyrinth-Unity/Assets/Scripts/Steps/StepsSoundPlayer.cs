@@ -6,18 +6,20 @@ namespace LabyrinthUnity.StepsNS
     public class StepsSoundPlayer
     {
         private AudioSource _audioSource;
-        public StepsSoundPlayer(AudioSource audioSource)
+        private SoundsList _soundsList;
+        public StepsSoundPlayer(AudioSource audioSource, SoundsList soundsList)
         {
             _audioSource = audioSource;
+            _soundsList = soundsList;
         }
 
-        public void PlayStepsSound(SoundsList soundsList)
+        public void PlayNextStepSound()
         {
 
         }
-        private void _playStepSound(AudioSource audioSource, AudioClip audioClip)
+        private void _playStepSound(AudioClip audioClip)
         {
-            audioSource.PlayOneShot(audioClip);
+            _audioSource.PlayOneShot(audioClip);
         }
     }
 }
